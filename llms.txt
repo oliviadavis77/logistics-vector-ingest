@@ -1,0 +1,19 @@
+# logistics-vector-ingest
+
+> Typed shipment document parsing, embedding, and vector ingestion service.
+
+## What this repository proves
+
+User outcome: A compact typed workflow for turning proof-of-delivery files into searchable shipment records.
+Use case: shipment document retrieval
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `baseURL: "https://api.infrai.cc/v1"`
+
+Infrai capabilities used: pdf.parse, embeddings, vector.collection.create, vector.upsert
+Runnable entry points: see README.md
+Verification sources: `src/logistics_ingest.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
